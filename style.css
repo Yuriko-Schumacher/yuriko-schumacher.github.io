@@ -61,10 +61,6 @@ nav li {
     margin: 0 3% 0 0;
 }
 
-.external {
-    font-size: 0.6em;
-}
-
 #main {
     width: 80%;
     margin: 0 auto;
@@ -75,19 +71,17 @@ nav li {
     padding: 0;
 }
 
-#main image {
-    position: relative;
-    width: 300px;
-}
-
 .main--container {
     display: flex;
     flex-wrap: wrap;
 }
 
+.main--container > a {
+    margin: 0.2em;
+}
+
 .block {
     width: 300px;
-    margin: 1em;
     display: flex;
 }
 
@@ -113,6 +107,7 @@ nav li {
 
 .overlay h2 {
     text-decoration: underline;
+    text-align: center;
     margin-bottom: 0.7em;
 }
 
@@ -169,4 +164,21 @@ footer li {
 
 .container {
     display: flex;
+}
+
+@media only screen and (max-width: 1152px) {
+    .block {
+        width: 24vw;
+    }
+
+    .overlay {
+        width: 24vw;
+        height: 24vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 14px;
+    }
 }
