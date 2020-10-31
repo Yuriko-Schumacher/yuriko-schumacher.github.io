@@ -61,6 +61,10 @@ nav li {
     margin: 0 3% 0 0;
 }
 
+.fa-external-link-alt {
+    font-size: 0.7em;
+}
+
 #main {
     width: 80%;
     margin: 0 auto;
