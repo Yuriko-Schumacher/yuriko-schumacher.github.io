@@ -81,19 +81,21 @@ nav li {
 }
 
 .block {
-    width: 300px;
     display: flex;
 }
 
 .block--img {
+    width: 24vw;
+    max-width: 300px;
     display: block;
-    width: 100%;
 }
 
 .overlay {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 24vw;
+    height: 24vw;
+    max-width: 300px;
+    max-height: 300px;
     background: rgba(251, 248, 245, 0.8);
     color: #3e3d3d;
     display: flex;
@@ -164,17 +166,6 @@ footer li {
 
 .container {
     display: flex;
-}
-
-@media only screen and (max-width: 1152px) {
-    .block {
-        width: 24vw;
-    }
-
-    .overlay {
-        width: 24vw;
-        height: 24vw;
-    }
 }
 
 @media only screen and (max-width: 900px) {
