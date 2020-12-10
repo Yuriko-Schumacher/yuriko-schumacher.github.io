@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Overpass:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Script&family=Overpass:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@400;700;900&display=swap");
 
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
 }
@@ -10,28 +11,31 @@ html, body {
     margin: 0;
 }
 
-body{
+body {
     font-size: 18px;
     color: #3e3d3d;
-    font-family: 'Overpass', sans-serif;
+    font-family: "Overpass", sans-serif;
     line-height: 1.5;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     line-height: 1;
 }
 
 h1 {
-    padding: 3em 0 0.5em;
+    margin: 3em 0 0.5em;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #3e3d3d;
     text-decoration: none;
 }
 
 a:hover {
-    color: #B0A297;
+    color: #b0a297;
     transition: 0.4s;
 }
 
@@ -59,10 +63,6 @@ nav li {
     display: inline-block;
     text-transform: uppercase;
     margin: 0 3% 0 0;
-}
-
-.fa-external-link-alt {
-    font-size: 0.7em;
 }
 
 #main {
@@ -106,6 +106,7 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
     backdrop-filter: blur(3px);
     opacity: 0;
     transition: opacity 0.25s;
@@ -165,7 +166,7 @@ footer li {
 }
 
 .font--special {
-    font-family: 'League Script', cursive;
+    font-family: "League Script", cursive;
 }
 
 .container {
