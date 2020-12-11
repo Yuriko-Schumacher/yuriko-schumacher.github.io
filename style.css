@@ -116,10 +116,14 @@ nav li {
     transition: opacity 0.25s;
 }
 
-.overlay h2 {
+.overlay > h2 {
     text-decoration: underline;
     text-align: center;
     margin-bottom: 0.7em;
+}
+
+.overlay > ul {
+    line-height: 1.2;
 }
 
 .overlay > * {
@@ -177,8 +181,14 @@ footer li {
     display: flex;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     body {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .overlay > ul {
+        display: none;
     }
 }
