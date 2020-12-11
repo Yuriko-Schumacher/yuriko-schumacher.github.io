@@ -65,6 +65,10 @@ nav li {
     margin: 0 3% 0 0;
 }
 
+.external {
+    font-size: 0.6em;
+}
+
 #main {
     width: 80%;
     margin: 0 auto;
