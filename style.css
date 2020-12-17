@@ -70,13 +70,13 @@ nav li {
 }
 
 #main {
-    width: 80%;
+    width: 74%;
     margin: 0 auto;
 }
 
 #main ul {
     list-style: none;
-    padding: 0;
+    padding: 0 auto;
 }
 
 .main--container {
