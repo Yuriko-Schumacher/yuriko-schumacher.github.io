@@ -6,15 +6,24 @@
 		rel="stylesheet"
 		href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 	/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
 </head>
 <body>
-	<header>
-		<div class="header--container">
-			<nav>
-				<ul>
-					<li><a href="#data">data work</a></li>
-					<li><a href="#multimedia">multimedia</a></li>
-					<li><a href="#publication">publication</a></li>
+	<div id="nav">
+		<div class="nav__container">
+			<nav class="nav__items">
+				<ul class="nav__logo">
+					<li>
+						<a
+							href="#hero"
+							><b>Yuriko Schumacher</b></a
+						>
+					</li>
+				</ul>
+				<ul class="nav__menu">
+					<li><a href="#hero">About</a>
+						</li>
+					<li><a href="#works">Works</a></li>
 					<li>
 						<a href="https://yurikoas.com" target="_blank"
 							>Blog
@@ -25,176 +34,268 @@
 				</ul>
 			</nav>
 		</div>
-	</header>
-	<div id="main">
-		<div id="data">
-			<h1>Data work</h1>
-			<div class="main--container">
-				<a
-					href="https://yuriko-schumacher.github.io/sumo/#header/"
-					target="_blank"
-				>
-					<div class="block">
-						<img
-							class="block--img"
-							src="image/sumo.png"
-							width="300"
-						/>
-						<div class="overlay">
-							<h2>Sumo wrestlers</h2>
-							<ul>
-								<li>HTML, CSS, R, d3.js</li>
-								<li class="font--special">December 2020</li>
-							</ul>
-						</div>
-					</div>
-				</a>
-				<a
-					href="https://yuriko-schumacher.github.io/halloween/"
-					target="_blank"
-				>
-					<div class="block">
-						<img
-							class="block--img"
-							src="image/Halloween.jpg"
-							width="300"
-						/>
-						<div class="overlay">
-							<h2>Halloween Candies</h2>
-							<ul>
-								<li>HTML, CSS, R</li>
-								<li class="font--special">October 2020</li>
-							</ul>
-						</div>
-					</div>
-				</a>
-				<!-- <a
-                    href="https://yuriko-schumacher.github.io/pokemon/"
-                    target="_blank"
-                >
-                    <div class="block">
-                        <img
-                            class="block--img"
-                            src="image/pokemon.jpg"
-                            width="300"
-                        />
-                        <div class="overlay">
-                            <h2>Pokemon statistics</h2>
-                            <ul>
-                                <li>HTML, CSS, R</li>
-                                <li class="font--special">September 2020</li>
-                            </ul>
-                        </div>
-                    </div>
-                </a> -->
+	</div>
+	<div class="about" id="hero">
+		<div class="about__container">
+			<div class="about__img">
+				<img src="image/Yuriko's photo.png" alt="" width="350" />
+			</div>
+			<div class="about__info">
+				<h1>Hi, I'm Yuriko.</h1>
+				<p>
+					I'm a journalism graduate student based in Boston, MA. I'm from Osaka Japan, and I previously worked for a Japanese national
+					newspaper as a staff writer. Now, I'm focusing on
+					interactive data visualization for the web.
+				</p>
+				<div class="about__lists">
+					<ul class="about__list">
+						<li>
+							<a
+								href="mailto:schumacher.y@northeastern.edu"
+								class="font--special"
+								><i class="far fa-envelope"></i>
+								schumacher.y@northeastern.edu</a
+							>
+						</li>
+						<li class="font--special">
+							<a href="tel:6466680656"
+								><i class="fas fa-phone"></i> 646-668-0656</a
+							>
+						</li>
+					</ul>
+					<ul class="about__list">
+						<li class="font--special">
+							<a
+								href="https://yurikoas.files.wordpress.com/2021/02/resume-updated-2_2.pdf"
+								target="_blank"
+								>Resume</a
+							>
+						</li>
+						<li class="font--special">
+							<a href="#works">Works</a>
+						</li>
+						<li>
+							<a
+								href="https://twitter.com/yuriko_a_s"
+								target="_blank"
+								><i class="fab fa-twitter"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="https://github.com/Yuriko-Schumacher"
+								target="_blank"
+								><i class="fab fa-github"></i
+							></a>
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/yuriko-schumacher/?locale=en_US"
+								target="_blank"
+								><i class="fab fa-linkedin"></i
+							></a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-
-		<div id="multimedia">
-			<h1>Multimedia</h1>
-			<div class="main--container">
-				<a
-					href="https://yuriko-schumacher.github.io/the-life-of-a-caregiver-amidst-the-COVID-19-pandemic"
-					target="_blank"
-				>
-					<div class="block">
-						<img
-							class="block--img"
-							src="image/caregiver.jpg"
-							width="300"
-						/>
-						<div class="overlay">
-							<h2>
-								The life of a caregiver amid the COVID-19
-								pandemic
-							</h2>
-							<ul>
-								<li>
-									HTML, CSS, JavaScript,<br />Audio, Video
-								</li>
-								<li class="font--special">December 2020</li>
-							</ul>
-						</div>
+	</div>
+	<div id="works">
+		<h1>My works:</h1>
+		<div class="works__container">
+			<a
+				class="works__work"
+				href="https://yuriko-schumacher.github.io/sumo/#header/"
+				target="_blank"
+				><div class="works__img">
+					<img class="" src="image/sumo.gif" width="400" />
+				</div>
+				<div class="works__description">
+					<h2>Analysis of Sumo Wrestlers</h2>
+					<p>
+						I analyzed Japanese Sumo wrestling's tournament ranking
+						table to see what kind of wrestlers are at the top of
+						the rankings. I first analyzed the data with R, and
+						created an interactive scatter plot with D3 JavaScript.
+					</p>
+					<div class="works__info">
+						<ul class="works__tools font--special">
+							<li>HTML/CSS</li>
+							<li>R</li>
+							<li>d3.js</li>
+						</ul>
+						<ul class="works__date font--special">
+							<li>December 2020</li>
+						</ul>
 					</div>
-				</a>
-				<a
-					href="https://yurikoas.com/2020/10/28/community-is-still-intact-the-coolidges-iconic-theatre-continues-to-grow-its-presence-despite-closure/"
-					target="_blank"
-				>
-					<div class="block">
-						<img
-							class="block--img"
-							src="image/Coolidge.jpg"
-							width="300"
-						/>
-						<div class="overlay">
-							<h2>Coolidge Theater</h2>
-							<ul>
-								<li>Video</li>
-								<li class="font--special">October 2020</li>
-							</ul>
-						</div>
+				</div></a
+			>
+			<a
+				class="works__work"
+				href="https://yuriko-schumacher.github.io/halloween/"
+				target="_blank"
+				><div class="works__img">
+					<img class="" src="image/Halloween.gif" width="400" />
+				</div>
+				<div class="works__description">
+					<h2>What is the most Popular Halloween Candy?</h2>
+					<p>
+						I analyzed the data about popularities of major
+						Halloween Candies. I first analyzed and visualized the
+						data with R, and later updated the project during the
+						winter break, making it interactive with D3 JavaScript
+						as well as implementing scrollytelling feature, using a
+						JavaScript library enter-view.js.
+					</p>
+					<div class="works__info">
+						<ul class="works__tools font--special">
+							<li>HTML/CSS</li>
+							<li>R</li>
+							<li>JavaScript</li>
+							<li>d3.js</li>
+						</ul>
+						<ul class="works__date font--special">
+							<li>October 2020 (updated in January 2021)</li>
+						</ul>
 					</div>
-				</a>
-				<a
-					href="https://yurikoas.com/2020/10/14/after-20-years-in-prison-voting-rights-activist-checo-yancy-encourages-you-to-register-to-vote/"
-					target="_blank"
-				>
-					<div class="block">
-						<img
-							class="block--img"
-							src="image/Checo.jpg"
-							width="300"
-						/>
-						<div class="overlay">
-							<h2>Checo Yancy</h2>
-							<ul>
-								<li>Audio</li>
-								<li class="font--special">September 2020</li>
-							</ul>
-						</div>
+				</div></a
+			>
+			<a
+				class="works__work"
+				href="https://yuriko-schumacher.github.io/the-life-of-a-caregiver-amidst-the-COVID-19-pandemic/"
+				target="_blank"
+				><div class="works__img">
+					<img class="" src="image/Cargiver.png" width="400" />
+				</div>
+				<div class="works__description">
+					<h2>The life of a caregiver amid the COVID-19 pandemic</h2>
+					<p>
+						This is a multimedia project that aimed to unpack lives
+						of people with dementia and their family caregivers
+						during the coronavirus pandemic. I interviewed two
+						in-home caregivers around the Boston area. Their stories
+						are told via text, pictures, audio files, and videos.
+					</p>
+					<div class="works__info">
+						<ul class="works__tools font--special">
+							<li>HTML/CSS</li>
+							<li>JavaScript</li>
+							<li>Audio</li>
+							<li>Video</li>
+						</ul>
+						<ul class="works__date font--special">
+							<li>December 2020</li>
+						</ul>
 					</div>
-				</a>
-				<a
-					href="https://twitter.com/yuriko_a_s/status/1311382865205170183?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1311382865205170183%7Ctwgr%5Eshare_3&ref_url=https%3A%2F%2Fyurikoas.com%2F2020%2F09%2F30%2Fnewcomer-assignment-misa-tran%2F"
-					target="_blank"
-				>
-					<div class="block">
-						<img
-							class="block--img"
-							src="image/Misa.jpg"
-							width="300"
-						/>
-						<div class="overlay">
-							<h2>Misa Tran</h2>
-							<ul>
-								<li>Tweetstorm</li>
-								<li class="font--special">September 2020</li>
-							</ul>
-						</div>
+				</div></a
+			>
+			<a
+				class="works__work"
+				href="https://thescopeboston.org/5211/q-a-changemakers/after-20-years-in-prison-voting-rights-activist-checo-yancy-encourages-you-to-register-to-vote/"
+				target="_blank"
+				><div class="works__img">
+					<img class="" src="image/Checo.png" width="400" />
+				</div>
+				<div class="works__description">
+					<h2>
+						Formerly incarcerated voting rights activist, Checo
+						Yancy's story
+					</h2>
+					<p>
+						I interviewed Checo Yancy, a formerly incarcerated
+						person who spent 20 years in prison and regained his
+						voting rights last year after 37 years. He is now a
+						director of Voice of the Experienced (VOTE), a
+						grassroots organization that advocates for the rights of
+						formerly incarcerated people. I composed the audio
+						interview story where he shares what it means to have
+						voting rights back.
+					</p>
+					<div class="works__info">
+						<ul class="works__tools font--special">
+							<li>Interviewing</li>
+							<li>Audio</li>
+						</ul>
+						<ul class="works__date font--special">
+							<li>October 2020</li>
+						</ul>
 					</div>
-				</a>
-			</div>
+				</div></a
+			>
+			<a
+				class="works__work"
+				href="https://www.asahi.com/articles/ASK3856DXK38UDCB01J.html"
+				target="_blank"
+				><div class="works__img">
+					<img class="" src="image/Yotsukaido Case.png" width="400" />
+				</div>
+				<div class="works__description">
+					<h2>
+						Exclusive: Japan's first arrest on the charge of
+						arranging for-profit child adoption
+					</h2>
+					<p>
+						My team and I broke the first arrest of a for-profit
+						child adoption case in Japan. I was able to have a
+						one-on-one interview with the suspect before the arrest,
+						deepening the story with exclusive Q&A with the suspect.
+						This story received the paper’s nationwide award for
+						Leading Local News Director.
+					</p>
+					<div class="works__info">
+						<ul class="works__tools font--special">
+							<li>Interviewing</li>
+							<li>Investigative Reporting</li>
+						</ul>
+						<ul class="works__date font--special">
+							<li>March 2017</li>
+						</ul>
+					</div>
+				</div></a
+			>
+			<a
+				class="works__work"
+				href="https://www.asahi.com/articles/ASJDF3PH0JDFUDCB00D.html"
+				target="_blank"
+				><div class="works__img">
+					<img
+						class=""
+						src="image/Funabashi Murder Case.png"
+						width="400"
+					/>
+				</div>
+				<div class="works__description">
+					<h2>Deep insight of a murder case</h2>
+					<p>
+						I covered a murder case where an elderly man had
+						strangled his wife who had been suffering from dementia.
+						After half a year of investigating the murder, I was
+						able to release a comprehensive story which gained a lot
+						of attention from the Japanese public and heightened
+						awareness around the challenges families face when
+						dealing with dementia. This story achieved the third
+						best reader conversion rate in Chiba prefecture.
+					</p>
+					<div class="works__info">
+						<ul class="works__tools font--special">
+							<li>Interviewing</li>
+							<li>Investigative Reporting</li>
+						</ul>
+						<ul class="works__date font--special">
+							<li>December 2016</li>
+						</ul>
+					</div>
+				</div></a
+			>
 		</div>
-
+	</div>
+	
 		<div id="publication">
-			<h1>Publication</h1>
+			<h1>Other Publications:</h1>
 			<ul>
-				<ul class="publication--block">
-					<li class="font--special">October 30, 2020</li>
-					<li class="publication--title">
-						<a
-							href="https://thescopeboston.org/5211/features/after-20-years-in-prison-voting-rights-activist-checo-yancy-encourages-you-to-register-to-vote/"
-							target="_blank"
-							>After 20 years in prison, voting rights activist
-							Checo Yancy encourages you to register to vote</a
-						>
-					</li>
-					<li>ー <i>The Scope</i></li>
-				</ul>
-				<ul class="publication--block">
+				<ul class="publication__block">
 					<li class="font--special">July 14, 2020</li>
-					<li class="publication--title">
+					<li class="publication__title">
 						<a
 							href="https://gobserver.net/2020/07/14/work-permits-for-intl-students-are-under-threat-heres-why-its-important/"
 							target="_blank"
@@ -204,9 +305,9 @@
 					</li>
 					<li>ー <i>Global Observer</i></li>
 				</ul>
-				<ul class="publication--block">
+				<ul class="publication__block">
 					<li class="font--special">July 8, 2020</li>
-					<li class="publication--title">
+					<li class="publication__title">
 						<a
 							href="https://gobserver.net/2020/07/08/intl-students-must-leave-the-us-if-their-studies-go-entirely-online-this-fall-here-are-boston-area-colleges-reopening-plans-so-far/"
 							target="_blank"
@@ -221,23 +322,35 @@
 		</div>
 	</div>
 	<footer>
-		<div class="footer--container">
-			<div class="footer--items">
-				<h2>Yuriko Anzai Schumacher</h2>
-				<p>
-					Yuriko is a journalism graduate student at Northeastern
-					University.
-				</p>
-				<ul>
+		<div class="footer__info">
+			<div class="about__lists">
+				<ul class="about__list">
 					<li>
 						<a
 							href="mailto:schumacher.y@northeastern.edu"
 							class="font--special"
-							>schumacher.y@northeastern.edu</a
+							><i class="far fa-envelope"></i>
+							schumacher.y@northeastern.edu</a
+						>
+					</li>
+					<li class="font--special">
+						<a href="tel:6466680656"
+							><i class="fas fa-phone"></i> 646-668-0656</a
+						>
+					</li>
+				</ul>
+				<ul class="about__list">
+					<li class="font--special">
+						<a
+							href="https://yurikoas.files.wordpress.com/2021/02/resume-updated-2_2.pdf"
+							target="_blank"
+							>Resume</a
 						>
 					</li>
 					<li>
-						<a href="https://twitter.com/yuriko_a_s" target="_blank"
+						<a
+							href="https://twitter.com/yuriko_a_s"
+							target="_blank"
 							><i class="fab fa-twitter"></i
 						></a>
 					</li>
@@ -258,5 +371,7 @@
 				</ul>
 			</div>
 		</div>
+		<div class="credit"><p class="font--special">© Yuriko Schumacher 2021</p></div>
+		
 	</footer>
 </body>
