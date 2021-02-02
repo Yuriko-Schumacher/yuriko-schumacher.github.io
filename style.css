@@ -1,196 +1,249 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Script&family=Overpass:ital,wght@0,400;0,700;0,900;1,400&family=Raleway:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Script&family=Overpass:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
 html,
 body {
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 body {
-    font-size: 18px;
-    color: #3e3d3d;
-    font-family: "Overpass", sans-serif;
-    line-height: 1.5;
+	font-size: 18px;
+	color: #3e3d3d;
+	font-family: "Overpass", sans-serif;
+	line-height: 1.5;
+	position: relative;
 }
 
 h1,
-h2,
-h3 {
-    line-height: 1;
-}
-
-h1 {
-    margin: 3em 0 0.5em;
+h2 {
+	font-family: "Playfair Display", serif;
+	margin: 0 0 1em 0;
+	line-height: 1;
 }
 
 a:link,
 a:visited {
-    color: #3e3d3d;
-    text-decoration: none;
+	color: #3e3d3d;
 }
 
 a:hover {
-    color: #b0a297;
-    transition: 0.4s;
+	color: #b0a297;
+	transition: 0.4s;
 }
 
-header {
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+#nav {
+	background: #f1eae2;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
-.header--container {
-    width: 80%;
-    margin: 0 auto;
+.nav__container {
+	width: 75%;
+	margin: 0 auto;
 }
 
-nav {
-    margin: 0 auto;
+.nav__items {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
-nav ul {
-    padding: 1em 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
+.nav__items > * {
+	flex: 0 0 40%;
+	text-transform: uppercase;
+}
+
+nav > ul {
+	padding: 0.5rem 0;
+	list-style: none;
 }
 
 nav li {
-    display: inline-block;
-    text-transform: uppercase;
-    margin: 0 3% 0 0;
+	display: inline-block;
+	margin: 0 2rem 0 0;
+}
+
+nav li:last-of-type {
+	margin: 0;
+}
+
+.nav__logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1.2rem;
+}
+
+.nav__logo a:link,
+.nav__logo a:visited {
+	text-decoration: none;
+}
+
+.nav__menu {
+	font-size: 0.8rem;
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .external {
-    font-size: 0.6em;
+	font-size: 0.6em;
 }
 
-#main {
-    width: 74%;
-    margin: 0 auto;
+.about {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#main ul {
-    list-style: none;
-    padding: 0 auto;
+.about__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.main--container {
-    display: flex;
-    flex-wrap: wrap;
+.about__container > * {
+	flex: 0 1 30%;
 }
 
-.main--container > a {
-    margin: 0.2em;
+.about__img {
+	width: 100%;
 }
 
-.block {
-    display: flex;
+.about__info {
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.block--img {
-    width: 24vw;
-    height: 24vw;
-    max-width: 300px;
-    max-height: 300px;
-    display: block;
+.about__lists {
+	margin-top: 1.5rem;
 }
 
-.overlay {
-    position: absolute;
-    width: 24vw;
-    height: 24vw;
-    max-width: 300px;
-    max-height: 300px;
-    background: rgba(251, 248, 245, 0.8);
-    color: #3e3d3d;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    backdrop-filter: blur(3px);
-    opacity: 0;
-    transition: opacity 0.25s;
+.about__list,
+.works__tools {
+	padding: 0;
+	display: flex;
+	align-items: flex-end;
+	gap: 1rem;
 }
 
-.overlay > h2 {
-    text-decoration: underline;
-    text-align: center;
-    margin-bottom: 0.7em;
+.about__list > li {
+	list-style: none;
 }
 
-.overlay > ul {
-    line-height: 1.2;
+#about {
+	width: 100%;
 }
 
-.overlay > * {
-    transform: translateY(20px);
-    transition: transform 0.25s;
+#works {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 3rem;
 }
 
-.overlay:hover {
-    opacity: 1;
+.works__work:link {
+	text-decoration: none;
 }
 
-.overlay:hover > * {
-    transform: translateY(0);
+.works__work:hover {
+	color: unset;
+	transform: scale(1.02);
+	transition: 0.4s;
 }
 
-.publication--block {
-    margin: 2em 0 0 1em;
+.works__work {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin: 5rem 0 15rem 0;
 }
 
-.publication--title {
-    font-size: 1.5em;
-    line-height: 1;
+.works__work > * {
+	flex-basis: 45%;
+}
+
+.works__img > img {
+	width: 100%;
+}
+
+.works__info {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	color: #b0a297;
+}
+
+.works__info > * {
+	list-style: none;
+}
+
+.works__tools > * {
+	padding: 0.1em 0.3em;
+	border: #b0a297 solid 1px;
+	border-radius: 0.3em;
+}
+
+#publication {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.publication__block {
+	margin: 2em 0 0 1em;
+	list-style: none;
+}
+
+.publication__title {
+	line-height: 1;
 }
 
 footer {
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+	background-image: linear-gradient(180deg, #fff 0%, #e2d1c3 100%);
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
-.footer--container {
-    height: 300px;
-    width: 80%;
-    margin: 6em auto 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.footer__info {
+	width: 75%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-footer ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 1.3em;
-}
-
-footer li {
-    margin: 0 0.5em 0 0;
+.credit {
+	margin: 0 auto;
+	padding: 2rem;
 }
 
 .font--special {
-    font-family: "League Script", cursive;
-}
-
-.container {
-    display: flex;
+	font-family: "Playfair Display", serif;
+	font-style: italic;
+	font-size: 0.8em;
 }
 
 @media only screen and (max-width: 1000px) {
-    body {
-        font-size: 14px;
-    }
+	body {
+		font-size: 14px;
+	}
 }
 
 @media only screen and (max-width: 740px) {
-    .overlay > ul {
-        display: none;
-    }
+	.overlay > ul {
+		display: none;
+	}
 }
