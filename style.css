@@ -241,9 +241,3 @@ footer {
 		font-size: 14px;
 	}
 }
-
-@media only screen and (max-width: 740px) {
-	.overlay > ul {
-		display: none;
-	}
-}
