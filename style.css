@@ -307,19 +307,11 @@ footer {
 
 @media only screen and (max-width: 450px) {
 	#nav {
-		position: absolute;
-	}
-
-	.nav__logo {
-		font-size: 1rem;
-	}
-
-	.nav__menu {
 		display: none;
 	}
 
 	.about {
-		height: 90vh;
+		align-items: center;
 	}
 
 	.about__img > img {
@@ -329,6 +321,10 @@ footer {
 
 	.contact-info {
 		display: block;
+	}
+
+	#works {
+		margin-top: 3rem;
 	}
 
 	.works__work {
