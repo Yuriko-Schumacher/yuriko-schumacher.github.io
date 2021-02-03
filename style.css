@@ -318,6 +318,10 @@ footer {
 		display: none;
 	}
 
+	.about {
+		height: 90vh;
+	}
+
 	.about__img > img {
 		max-width: 165px;
 		max-height: 206px;
