@@ -314,6 +314,11 @@ footer {
 		display: none;
 	}
 
+	.about__img > img {
+		max-width: 165px;
+		max-height: 206px;
+	}
+
 	.contact-info {
 		display: block;
 	}
