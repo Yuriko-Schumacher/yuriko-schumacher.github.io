@@ -161,10 +161,14 @@ nav li:last-of-type {
 	padding-top: 3rem;
 }
 
+.works__container {
+	position: relative;
+}
+
 .works__work {
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 	gap: 1rem;
 	padding: 10rem 0;
@@ -178,12 +182,19 @@ nav li:last-of-type {
 	position: relative;
 	z-index: 0;
 	color: unset;
-	transform: scale(1.02);
-	transition: 0.4s;
 }
 
 .works__work > * {
 	flex-basis: 45%;
+}
+
+.works__description {
+	position: relative;
+}
+
+.works__img {
+	position: sticky;
+	top: 30vh;
 }
 
 .works__img > img {
