@@ -342,6 +342,11 @@ footer {
 		padding: 3rem 0;
 	}
 
+	.works__img {
+		position: relative;
+		transform: translateY(-190%);
+	}
+
 	#publication > ul {
 		padding: 0;
 	}
