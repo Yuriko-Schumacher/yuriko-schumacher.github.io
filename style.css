@@ -199,6 +199,7 @@ nav li:last-of-type {
 
 .works__img > img {
 	width: 100%;
+	outline: 1px solid #b0a297;
 }
 
 .works__info {
