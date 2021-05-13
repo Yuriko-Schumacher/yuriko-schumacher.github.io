@@ -198,7 +198,7 @@ nav li:last-of-type {
 	top: 30vh;
 }
 
-.works__img > img {
+.works__img img {
 	width: 100%;
 	outline: 1px solid #b0a297;
 }
