@@ -30,10 +30,14 @@ h2 {
 a:link,
 a:visited {
 	color: #3e3d3d;
+	text-decoration-color: #3e3d3d;
+	text-underline-offset: 2px;
+	text-decoration-thickness: 2px;
 }
 
 a:hover {
 	color: #b0a297;
+	text-decoration-color: #b0a297;
 	transition: 0.4s;
 }
 
@@ -277,6 +281,12 @@ footer {
 	font-family: "Playfair Display", serif;
 	font-style: italic;
 	font-size: 0.8em;
+}
+
+.font--special a:link,
+.font--special a:visited {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 1px;
 }
 
 @media only screen and (max-width: 1160px) {
