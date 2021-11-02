@@ -317,6 +317,11 @@ footer {
 
 	.works__work {
 		flex-direction: column;
+		position: unset;
+	}
+
+	.works__img {
+		position: unset;
 	}
 
 	.works__info {
@@ -352,11 +357,6 @@ footer {
 
 	.works__work {
 		padding: 3rem 0;
-		position: unset;
-	}
-
-	.works__img {
-		position: unset;
 	}
 
 	#publication > ul {
