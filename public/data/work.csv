@@ -94,6 +94,11 @@ Statistical analysis of cherry blossom's first-blooming date,statistics-cherry-b
             mapping locations where cherry blossoms were blooming on April 1st,
             from 1950s to present, and so on.
           </p>",Spring 2021,R,Statistical tests,
+Analysis of Sumo Wrestlers,sumo.gif,https://yuriko-schumacher.github.io/sumo#header,"					<p>
+						I analyzed Japanese Sumo wrestling's tournament ranking
+						table to see what kind of wrestlers are at the top of
+						the rankings.
+					</p>",December 2020,d3.js,R,
 The life of a caregiver amid the COVID-19 pandemic,caregiver.png,https://yuriko-schumacher.github.io/the-life-of-a-caregiver-amidst-the-COVID-19-pandemic/,"          <p>
             This is a multimedia project that aimed to unpack lives of people
             with dementia and their family caregivers during the coronavirus
