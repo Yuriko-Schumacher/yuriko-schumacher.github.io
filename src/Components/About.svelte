@@ -35,7 +35,7 @@
         </ul>
         <ul class="about__list">
           <li class="font--special">
-            <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="./pdf/resume.pdf" target="_blank">Resume</a>
           </li>
           <li class="font--special">
             <a href="#work">Work</a>
