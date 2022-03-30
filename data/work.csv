@@ -2,7 +2,7 @@ title,image,link,description,time,skill1,skill2,skill3
 The Astrological Effect on Aviation,tyswd.gif,https://yuriko-schumacher.github.io/tyswd/,"<p>My teammates and I analyzed the relationship between astrologial activities and flight accidents and delays. Specifically, we looked at moon phases and mercury retrograde periods in relation to flight accidents and delays in the U.S.</p>
 <br>
 <p>I contributed by collecting and analyzing data, finding stories out of data and visualizing it, designing and developing the page.</p>",January 2022,d3.js,R,Svelte
-74 storms hitting MA: Where they came from and where they were going,hurricane.gif,https://drive.google.com/drive/u/0/folders/0BzCendxCl7CeV3hTU2xWVWQxXzg?resourcekey=0-95GD8ZPn8NVfrVMwlLiAow,<p>I created four different kinds of maps and visualizations about all storms that have directly hit the land of Massachusetts since 1850s. I gathered and cleaned data before importing it into QGIS to conduct geo processing and design the maps. I then moved them into Illustrator to finish up the static presentation.</p>,December 2021,QGIS,Illustrator,
+74 storms hitting MA: Where they came from and where they were going,hurricane.gif,https://github.com/Yuriko-Schumacher/yuriko-schumacher.github.io/blob/master/public/pdf/hurricane.pdf,<p>I created four different kinds of maps and visualizations about all storms that have directly hit the land of Massachusetts since 1850s. I gathered and cleaned data before importing it into QGIS to conduct geo processing and design the maps. I then moved them into Illustrator to finish up the static presentation.</p>,December 2021,QGIS,Illustrator,
 Kyoto’s cherry blossoms blooming earlier than ever,sakura.gif,https://globalobserver.github.io/projects/cherry-blossom/index.html,"          <p>
             I visualized cherry blossom's peak dates since 812. I took this as a
             design challenge: I combined a pictogram scatterplot and histogram.
@@ -49,7 +49,7 @@ Internship at Milwaukee Journal Sentinel,mjs.gif,,"          <p>
               >this one about Wisconsin's dairy industry during the pandemic</a
             >, for which I collected and analyzed data, conceptualized a story,
             and designed and produced data visualization for
-            <a href=""image/dairy-print.pdf"" target=""_blank"">print</a>
+            <a href=""https://github.com/Yuriko-Schumacher/yuriko-schumacher.github.io/blob/master/public/pdf/dairy-print.pdf target=""_blank"">print</a>
             and
             <a
               href=""https://www.jsonline.com/story/communities/2021/08/06/2020-not-bad-dairy-industry-but-crisis-continues/5383796001/""
@@ -101,7 +101,7 @@ The life of a caregiver amid the COVID-19 pandemic,caregiver.png,https://yuriko-
             area. Their stories are told via text, pictures, audio files, and
             videos.
           </p>",December 2020,JavaScript,Audio,Video
-Exclusive: Japan's first arrest on the charge of arranging for-profit child adoption,adoption.png,https://drive.google.com/drive/u/0/folders/0BzCendxCl7CeV3hTU2xWVWQxXzg?resourcekey=0-95GD8ZPn8NVfrVMwlLiAow,"          <p>
+Exclusive: Japan's first arrest on the charge of arranging for-profit child adoption,adoption.png,https://github.com/Yuriko-Schumacher/yuriko-schumacher.github.io/blob/master/public/pdf/adoption.pdf,"          <p>
             At The Asahi Shimbun, a Japanese national newspaper, my team and I
             broke the first arrest of a for-profit child adoption case in Japan.
             I was able to have a one-on-one interview with the suspect before
@@ -113,7 +113,7 @@ Exclusive: Japan's first arrest on the charge of arranging for-profit child adop
             This story received the paper’s nationwide award for Leading Local
             News Director.
           </p>",March 2017,Sourcing,Investigative Reporting,
-Deep insight of a murder case,murder.png,https://drive.google.com/drive/u/0/folders/0BzCendxCl7CeV3hTU2xWVWQxXzg?resourcekey=0-95GD8ZPn8NVfrVMwlLiAow,"          <p>
+Deep insight of a murder case,murder.png,https://github.com/Yuriko-Schumacher/yuriko-schumacher.github.io/blob/master/public/pdf/murder.pdf,"          <p>
             At The Asahi Shimbun, a Japanese national newspaper, I covered a
             murder case where an elderly man had strangled his wife who had been
             suffering from dementia.
