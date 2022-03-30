@@ -1,0 +1,132 @@
+title,image,link,description,time,skill1,skill2,skill3
+The Astrological Effect on Aviation,tyswd.gif,https://yuriko-schumacher.github.io/tyswd/,"<p>My teammates and I analyzed the relationship between astrologial activities and flight accidents and delays. Specifically, we looked at moon phases and mercury retrograde periods in relation to flight accidents and delays in the U.S.</p>
+<br>
+<p>I contributed by collecting and analyzing data, finding stories out of data and visualizing it, designing and developing the page.</p>",January 2022,d3.js,R,Svelte
+74 storms hitting MA: Where they came from and where they were going,hurricane.gif,https://drive.google.com/drive/u/0/folders/0BzCendxCl7CeV3hTU2xWVWQxXzg?resourcekey=0-95GD8ZPn8NVfrVMwlLiAow,<p>I created four different kinds of maps and visualizations about all storms that have directly hit the land of Massachusetts since 1850s. I gathered and cleaned data before importing it into QGIS to conduct geo processing and design the maps. I then moved them into Illustrator to finish up the static presentation.</p>,December 2021,QGIS,Illustrator,
+Kyoto’s cherry blossoms blooming earlier than ever,sakura.gif,https://globalobserver.github.io/projects/cherry-blossom/index.html,"          <p>
+            I visualized cherry blossom's peak dates since 812. I took this as a
+            design challenge: I combined a pictogram scatterplot and histogram.
+          </p>
+          <br />
+          <p>
+            As you scroll, scatterplot will form into histogram, while a bar on
+            the smaller version will move automatically. By dragging and
+            dropping the bar, the page will scroll to where the bar is dropped.
+          </p>",June 2021,d3.js,R,
+Data analysis and visualization for a Boston Globe Magazine story,ethnic-studies.gif,https://www.bostonglobe.com/2022/02/17/magazine/new-ethnic-studies-requirements-mean-more-lessons-race-boston-classrooms/,"<p>I collaborated with an independent journalist <a href=""https://www.lindakwertheimer.com/"" target=""_blank"">Linda K. Wertheimer</a> for a story about ethnic studies courses in the U.S. With the data we received from Holyoke Public Schools, I conducted statistical tests to determine the effect of taking ethnic studies courses, with guidance from Arindrajit Dube, professor of University of Massachusetts.</p>",February 2022,Statistical tests,R,d3.js
+Scrollytelling map of BPD's body cam footage,bodycam.gif,https://thescopeboston.org/6547/features/boston-police-body-cam-footage-shows-confrontations-during-the-protests-following-the-death-of-george-floyd,"          <p>
+            Demonstrations in downtown Boston on May 31, 2020 turned into
+            violent clashes between protesters and police. I tracked key moments
+            between protesters and police that night using body camera footage
+            revealed by a news and commentary website about the justice system,
+            <a
+              href=""https://theappeal.org/bodycam-video-shows-mob-mentality-of-boston-police-who-responded-to-george-floyd-protests-lawyer-says/""
+              target=""_blank""
+              >The Appeal</a
+            >.
+          </p>
+          <br />
+          <p>
+            I developed based on a scrollytelling
+            <a href=""https://demos.mapbox.com/scrollytelling/"" target=""_blank""
+              >template</a
+            >
+            offered by a custom online mapping tool,
+            <a href=""https://www.mapbox.com/"" target=""_blank"">Mapbox</a>, which
+            uses a JavaScript library
+            <a
+              href=""https://github.com/russellgoldenberg/scrollama""
+              target=""_blank""
+              >scrollama.js</a
+            >.
+          </p>",May 2021,Mapbox GL JS,d3.js,
+Internship at Milwaukee Journal Sentinel,mjs.gif,,"          <p>
+            As a data-visual intern for the Summer 2021, I wrote data-driven
+            stories such as
+            <a
+              href=""https://www.jsonline.com/story/communities/2021/08/06/2020-not-bad-dairy-industry-but-crisis-continues/5383796001/""
+              target=""_blank""
+              >this one about Wisconsin's dairy industry during the pandemic</a
+            >, for which I collected and analyzed data, conceptualized a story,
+            and designed and produced data visualization for
+            <a href=""image/dairy-print.pdf"" target=""_blank"">print</a>
+            and
+            <a
+              href=""https://www.jsonline.com/story/communities/2021/08/06/2020-not-bad-dairy-industry-but-crisis-continues/5383796001/""
+              target=""_blank""
+              >online</a
+            >
+            publication.
+          </p>
+          <br />
+          <p>
+            Simultaneously, I worked with other journalists to contribute
+            graphics and data collection/analysis/visualization from daily (like
+            <a
+              href=""https://www.jsonline.com/story/news/2021/08/17/deeper-look-covid-19-delta-variant-vaccines-how-viruses-spread/8100624002/""
+              target=""_blank""
+              >this story</a
+            >
+            I created a chart and
+            <a
+              href=""https://www.jsonline.com/story/news/local/milwaukee/2021/07/15/milwaukees-vacant-homes-threaten-neighborhood-safety-property-values/5026155001/""
+              target=""_blank""
+              >this one</a
+            >
+            I created an interactive map) to
+            <a
+              href=""https://www.jsonline.com/in-depth/travel/2021/07/01/national-parks-midwest-located-wisconsin-michigan-indiana-iowa-missouri/7658286002/""
+              target=""_blank""
+              >feature</a
+            >
+            to long-term projects (to be published in near future).
+          </p>",June - September 2021,R,d3.js,Illustrator
+Statistical analysis of cherry blossom's first-blooming date,statistics-cherry-blossom.gif,https://yuriko-schumacher.github.io/statistical-analysis-of-cherry-blossom-first-bloom-date/,"          <p>
+            I conducted an array of statistical analyses to understand the trend
+            of Japanese cherry blossom's first-blooming dates, as well as to
+            test whether some theories regarding first-blooming dates are true.
+          </p>
+          <br />
+          <p>
+            Analyses include: paired t-test comparing actual blooming dat to
+            30-year moving average, one-sample t-test to compare actual blooming
+            date to expected blooming date based on a theory, geographically
+            mapping locations where cherry blossoms were blooming on April 1st,
+            from 1950s to present, and so on.
+          </p>",Spring 2021,R,Statistical tests,
+The life of a caregiver amid the COVID-19 pandemic,caregiver.png,https://yuriko-schumacher.github.io/the-life-of-a-caregiver-amidst-the-COVID-19-pandemic/,"          <p>
+            This is a multimedia project that aimed to unpack lives of people
+            with dementia and their family caregivers during the coronavirus
+            pandemic. I interviewed two in-home caregivers around the Boston
+            area. Their stories are told via text, pictures, audio files, and
+            videos.
+          </p>",December 2020,JavaScript,Audio,Video
+Exclusive: Japan's first arrest on the charge of arranging for-profit child adoption,adoption.png,https://drive.google.com/drive/u/0/folders/0BzCendxCl7CeV3hTU2xWVWQxXzg?resourcekey=0-95GD8ZPn8NVfrVMwlLiAow,"          <p>
+            At The Asahi Shimbun, a Japanese national newspaper, my team and I
+            broke the first arrest of a for-profit child adoption case in Japan.
+            I was able to have a one-on-one interview with the suspect before
+            the arrest, adding a deeper insight to the story with an exclusive
+            Q&A.
+          </p>
+          <br />
+          <p>
+            This story received the paper’s nationwide award for Leading Local
+            News Director.
+          </p>",March 2017,Sourcing,Investigative Reporting,
+Deep insight of a murder case,murder.png,https://drive.google.com/drive/u/0/folders/0BzCendxCl7CeV3hTU2xWVWQxXzg?resourcekey=0-95GD8ZPn8NVfrVMwlLiAow,"          <p>
+            At The Asahi Shimbun, a Japanese national newspaper, I covered a
+            murder case where an elderly man had strangled his wife who had been
+            suffering from dementia.
+          </p>
+          <br />
+          <p>
+            After half a year of investigating the murder, I was able to release
+            a comprehensive story which gained a lot of attention from the
+            Japanese public and heightened awareness around the challenges
+            families face when dealing with dementia.
+          </p>
+          <br />
+          <p>
+            This story achieved the third best reader conversion rate in Chiba
+            prefecture.
+          </p>",December 2016,Sourcing,Investigative Reporting,
