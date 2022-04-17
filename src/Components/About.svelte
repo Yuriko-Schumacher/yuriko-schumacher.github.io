@@ -8,7 +8,7 @@
       <p>
         I'm a journalism graduate student based in Boston, MA. I produce
         data-driven and visual content for the
-        <a href="https://www.jsonline.com/" target="_blank"
+        <a href="https://www.jsonline.com/staff/7702894002/yuriko-schumacher/" target="_blank"
           >Milwaukee Journal Sentinel</a
         >
         as a data-visual intern.
