@@ -6,7 +6,7 @@
     <div class="about__info">
       <h1>Hi, I'm Yuriko.</h1>
       <p>
-        I'm a journalism graduate student based in Boston, MA. I produce
+        I'm a visual journalist based in Boston, MA. I am an incoming graphics intern at the Wall Street Journal for the summer 2022. Until recently, I produced
         data-driven and visual content for the
         <a href="https://www.jsonline.com/staff/7702894002/yuriko-schumacher/" target="_blank"
           >Milwaukee Journal Sentinel</a
