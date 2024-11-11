@@ -1,93 +1,118 @@
 <script>
+  const formatDate = (dateString) => {
+    const [month, year] = dateString.split('-');
+    const date = new Date(year, month - 1); // month is zero-based
+    return date.toLocaleString('en-US', { month: 'long', year: 'numeric' });
+  }
+
   export let data;
   export let index;
   export let length;
-  let skills = [data.skill1, data.skill2, data.skill3];
-  skills = skills.filter(skill => skill !== "")
+  let skills = [data.skill_1, data.skill_2, data.skill_3];
+  skills = skills.filter(skill => skill !== "");
+  let roles = [data.role_1, data.role_2, data.role_3, data.role_4];
+  roles = roles.filter(role => role !== "");
+  let vizs = [data.viz_1, data.viz_2, data.viz_3, data.viz_4, data.viz_5];
+  vizs = vizs.filter(viz => viz != "");
+  console.log(vizs)
+
 </script>
 
-<div class="works__work">
-  <div class="works__img">
-    <a href="{data.link}" target="_blank"><img class="" src="./image/{data.image}" width="400" alt="{data.title}"/></a>
-  </div>
-  <div class="works__description">
-    <h2>{data.title}</h2>
-    {#if data.link !== ""}
-      <p>
-        <strong>
-          <a href="{data.link}" target="_blank"><i class="fas fa-external-link-alt"></i> Jump to this story</a
-          >
-        </strong>
-      </p>
-      <br />
-    {/if}
-    {@html data.description}
-    <div class="works__info">
-      <ul class="works__tools font--special">
-        {#each skills as skill}
-          <li>{skill}</li>
-        {/each}
-      </ul>
-      <ul class="works__date font--special">
-        <li>{data.time}</li>
-      </ul>
+<a href="{data.link}" target="_blank">
+  <div class="works__work">
+    <div class="works__img">
+      <img class="" src="./image/{data.id}.{data.img}" width="400" alt="{data.title}"/>
+    </div>
+    <div class="works__description">
+      <div class="works__info works__info__top">
+        <div class="works__date font--special">{formatDate(data.date)}</div>
+        <div class="works__media font--special">{data.media}</div>
+      </div>
+      <h2>{data.title}{#if data.is_featured == "TRUE"}<i class="fa-solid fa-star"></i>{/if}</h2>
+      {@html data.description}
+      <div class="works__info works__info__bottom">
+        <ul class="works__tools">
+          Skills:
+          {#each skills as skill}
+            <li>{skill}</li>
+          {/each}
+        </ul>
+        <ul class="works__tools">
+          Roles:
+          {#each roles as role}
+            <li>{role}</li>
+          {/each}
+        </ul>
+        {#if vizs.length != 0}
+          <ul class="works__tools">
+            Visualization types:
+            {#each vizs as viz}
+              <li>{viz}</li>
+            {/each}
+          </ul>
+        {/if}
+      </div>
     </div>
   </div>
-</div>
-{#if index !== length}
-  <hr class="devide" size="3px" color="#f1eae2" /> 
-{/if}
+</a>
 
 <style>
   .works__work {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 10rem 0;
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #b0a297;
+    transition: 0.4s;
   }
-  .works__work:link {
+  a {
     text-decoration: none;
+    transition: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+  a:hover {
+    color: inherit;
+  }
+  .works__work h2 {
+    font-size: 18px;
+    margin: 0.8rem 0;
   }
   .works__work:hover {
-    position: relative;
-    z-index: 0;
     color: unset;
-  }
-  .works__work > * {
-    flex-basis: 45%;
-  }
-  .works__description {
-    position: relative;
-  }
-  .works__img {
-    position: sticky;
-    top: 30vh;
+    -webkit-box-shadow: 0px 0px 10px 10px var(--theme-baige);
+    -moz-box-shadow: 0px 0px 10px 10px var(--theme-baige);
+    box-shadow: 0px 0px 10px 10px var(--theme-baige);
   }
   .works__img img {
     width: 100%;
-    outline: 1px solid #b0a297;
+    outline: 1px solid var(--theme-baige);
   }
   .works__info {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    color: #b0a297;
+  }
+  .works__info__top {
     display: flex;
     justify-content: space-between;
-    color: #b0a297;
   }
   .works__info > * {
     list-style: none;
   }
+  .works__tools {
+    padding: 0;
+  }
   .works__tools > * {
-    padding: 0.1em 0.3em;
-    border: #b0a297 solid 1px;
+    padding: 0.05em 0.3em;
+    margin: 0 0.3em;
+    display: inline-block;
+    background-color: #b0a297;
+    color: white;
     border-radius: 0.3em;
+    font-size: 0.8em;
   }
   .works__date {
     padding: 0;
-  }
-  .devide {
-    margin: 0 auto;
   }
   @media only screen and (max-width: 950px) {
     .works__work {
@@ -101,14 +126,15 @@
     .works__img {
       position: unset;
     }
-    .works__info {
+    .works__info__top {
       display: block;
     }
     .works__date {
       margin-top: 1em;
     }
-    .devide {
-      width: calc(100% - 6rem);
-    }
+  }
+  i {
+    font-size: 0.8rem;
+    padding: 0 0 0.2rem 0.2rem;
   }
 </style>

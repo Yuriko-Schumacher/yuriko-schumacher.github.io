@@ -3,8 +3,8 @@
     <div class="about__lists">
       <ul class="about__list contact-info">
         <li class="font--special">
-          <a href="mailto:schumacher.y@northeastern.edu"
-            ><i class="far fa-envelope"></i> schumacher.y@northeastern.edu</a
+          <a href="mailto:yuriko.schumacher@gmail.com"
+            ><i class="far fa-envelope"></i> yuriko.schumacher@gmail.com</a
           >
         </li>
         <li class="font--special">
@@ -19,7 +19,7 @@
         </li>
         <li>
           <a href="https://twitter.com/yuriko_a_s" target="_blank"
-            ><i class="fab fa-twitter"></i
+            ><i class="fa-brands fa-x-twitter"></i
           ></a>
         </li>
         <li>
@@ -38,6 +38,24 @@
     </div>
   </div>
   <div class="credit">
-    <p class="font--special">© Yuriko Schumacher 2022</p>
+    <p class="font--special">© Yuriko Schumacher 2024</p>
   </div>
 </footer>
+
+<style>
+  .about__lists {
+    margin-top: 1.5rem;
+  }
+  .about__list{
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    font-family: var(--font-serif);
+    font-style: italic;
+    gap: 1rem;
+    font-size: 0.8em;
+  }
+  .about__list > li {
+    list-style: none;
+  }
+</style>

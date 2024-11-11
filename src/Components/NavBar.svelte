@@ -23,7 +23,7 @@
     width: 100%;
   }
   .nav__container {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
   nav {
@@ -63,7 +63,7 @@
     justify-content: flex-end;
     align-items: center;
   }
-  @media (max-width: 576px) {
+  @media (max-width: 600px) {
     #nav {
       display: none;
     }

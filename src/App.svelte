@@ -1,5 +1,5 @@
 <script>
-  import { csv } from 'd3'
+  import { csv, json } from 'd3'
 
   import NavBar from './Components/NavBar.svelte'
   import About from './Components/About.svelte'
@@ -12,9 +12,10 @@
   let promise = getData();
   async function getData() {
     let workD = await csv("data/work.csv");
+    workD = workD.sort((a, b) => a.is_featured - b.is_featured);
+    console.log(workD)
     let otherD = await csv("data/other.csv");
     datasets = [workD, otherD];
-    console.log(datasets)
   }
 </script>
 
@@ -23,7 +24,7 @@
   <About />
   {#await promise then data}
     <Work data={datasets[0]} />
-    <Other data={datasets[1]} />
+    <!-- <Other data={datasets[1]} /> -->
   {/await}
   <Footer />
 </main>
