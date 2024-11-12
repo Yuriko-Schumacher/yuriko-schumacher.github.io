@@ -1,4 +1,7 @@
 <script>
+import { widont } from "journalize";
+
+
   const formatDate = (dateString) => {
     const [month, year] = dateString.split('-');
     const date = new Date(year, month - 1); // month is zero-based
@@ -6,15 +9,12 @@
   }
 
   export let data;
-  export let index;
-  export let length;
   let skills = [data.skill_1, data.skill_2, data.skill_3];
   skills = skills.filter(skill => skill !== "");
   let roles = [data.role_1, data.role_2, data.role_3, data.role_4];
   roles = roles.filter(role => role !== "");
   let vizs = [data.viz_1, data.viz_2, data.viz_3, data.viz_4, data.viz_5];
   vizs = vizs.filter(viz => viz != "");
-  console.log(vizs)
 
 </script>
 
@@ -29,7 +29,7 @@
         <div class="works__media font--special">{data.media}</div>
       </div>
       <h2>{data.title}{#if data.is_featured == "TRUE"}<i class="fa-solid fa-star"></i>{/if}</h2>
-      {@html data.description}
+      {@html widont(data.description)}
       <div class="works__info works__info__bottom">
         <ul class="works__tools">
           Skills:
@@ -89,27 +89,32 @@
     outline: 1px solid var(--theme-baige);
   }
   .works__info {
+    font-size: 0.8em;
     margin-top: 0.5rem;
     color: #b0a297;
   }
   .works__info__top {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
   }
-  .works__info > * {
+  .works__info > ul {
+    margin: 0.2em;
     list-style: none;
+  }
+  .works__info__bottom {
+    margin: 1.2rem 0 0 0;
   }
   .works__tools {
     padding: 0;
   }
   .works__tools > * {
-    padding: 0.05em 0.3em;
-    margin: 0 0.3em;
+    padding: 0.01em 0.3em;
+    margin: 0.1em 0.3em;
     display: inline-block;
     background-color: #b0a297;
     color: white;
     border-radius: 0.3em;
-    font-size: 0.8em;
   }
   .works__date {
     padding: 0;
@@ -126,11 +131,10 @@
     .works__img {
       position: unset;
     }
-    .works__info__top {
-      display: block;
-    }
-    .works__date {
-      margin-top: 1em;
+  }
+  @media only screen and (max-width: 500px) {
+    .works__work {
+      padding: 1.2rem 1rem;
     }
   }
   i {

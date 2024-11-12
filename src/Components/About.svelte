@@ -10,11 +10,10 @@
     <div class="about__info">
       <h1>Hi, I'm Yuriko.</h1>
       <p>
-        I'm a data visualization journalist based in Austin, TX. Currently, I work as a data visuals designer/developer at the Texas Tribune. I am passionate about designing and producing meaningful (and beautiful &#10024;) graphics/data tools that tell {widont("important stories.")}
+        Currently, I work as a <a href="https://www.texastribune.org/about/staff/yuriko-schumacher/" target="_blank">data visuals designer/developer</a> at the Texas Tribune. I am passionate about designing and producing meaningful (and beautiful &#10024;) graphics/data tools that tell {widont("important stories.")}
       </p>
-      <br>
       <p>
-        My skills currently include: front-end development with frameworks like React and Svelte, JavaScript libraries including d3.js and three.js, data analysis and statistical analysis in R, GIS analysis and production using QGIS, design tools like figma, and graphics prodution with Illustrator. I'm constantly exploring new technologies as I pursue the best ways to execute {widont("on projects!")}
+        My skills currently include: front-end development with frameworks like <span class="skill">React</span> and <span class="skill">Svelte</span>, JavaScript libraries including <span class="skill">d3.js</span> and <span class="skill">three.js</span>, data analysis and statistical analysis in <span class="skill">R</span>, GIS analysis and production using <span class="skill">QGIS</span>, design tools like <span class="skill">figma</span>, and graphics prodution with <span class="skill">Illustrator</span>. I'm constantly exploring new technologies as I pursue the best ways to execute {widont("on projects!")}
       </p>
       <div class="about__lists">
         <ul class="about__list contact-info">
@@ -85,15 +84,27 @@
     margin-right: 5%;
   }
   .about__info {
-    max-width: 600px;
+    max-width: 560px;
     min-height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 0 1em 0;
   }
+  .about__info p {
+    margin: 0.5rem 0;
+  }
+  .skill {
+    font-size: 0.8em;
+    padding: 0.01em 0.3em;
+    margin: 0;
+    display: inline-block;
+    background-color: #b0a297;
+    color: white;
+    border-radius: 0.3em;
+  }
   .about__lists {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
   }
   .about__list{
     padding: 0;
@@ -102,7 +113,6 @@
     font-family: var(--font-serif);
     font-style: italic;
     gap: 1rem;
-    font-size: 0.8em;
   }
   .about__list > li {
     list-style: none;

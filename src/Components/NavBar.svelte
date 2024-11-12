@@ -63,7 +63,13 @@
     justify-content: flex-end;
     align-items: center;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 740px) {
+    .nav__container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 365px) {
     #nav {
       display: none;
     }
