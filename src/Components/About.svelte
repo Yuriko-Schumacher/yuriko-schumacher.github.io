@@ -37,7 +37,7 @@
             <a href="#work">Work</a>
           </li>
           <li>
-            <a href="https://twitter.com/yuriko_a_s" target="_blank"
+            <a href="https://x.com/yuriko_a_s" target="_blank"
               ><i class="fa-brands fa-x-twitter"></i></a>
           </li>
           <li>

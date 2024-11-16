@@ -18,7 +18,7 @@
           <a href="https://github.com/Yuriko-Schumacher/yuriko-schumacher.github.io/blob/main/public/pdf/resume.pdf" target="_blank">Resume</a>
         </li>
         <li>
-          <a href="https://twitter.com/yuriko_a_s" target="_blank"
+          <a href="https://x.com/yuriko_a_s" target="_blank"
             ><i class="fa-brands fa-x-twitter"></i
           ></a>
         </li>
