@@ -15,7 +15,7 @@
       </ul>
       <ul class="about__list">
         <li class="font--special">
-          <a href="./pdf/resume.pdf" target="_blank">Resume</a>
+          <a href="https://github.com/Yuriko-Schumacher/yuriko-schumacher.github.io/blob/main/public/pdf/resume.pdf" target="_blank">Resume</a>
         </li>
         <li>
           <a href="https://twitter.com/yuriko_a_s" target="_blank"
