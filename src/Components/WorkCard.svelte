@@ -9,12 +9,6 @@ import { widont } from "journalize";
   }
 
   export let data;
-  let skills = [data.skill_1, data.skill_2, data.skill_3];
-  skills = skills.filter(skill => skill !== "");
-  let roles = [data.role_1, data.role_2, data.role_3, data.role_4];
-  roles = roles.filter(role => role !== "");
-  let vizs = [data.viz_1, data.viz_2, data.viz_3, data.viz_4, data.viz_5];
-  vizs = vizs.filter(viz => viz != "");
 
 </script>
 
@@ -33,20 +27,20 @@ import { widont } from "journalize";
       <div class="works__info works__info__bottom">
         <ul class="works__tools">
           Skills:
-          {#each skills as skill}
+          {#each data.skill as skill}
             <li>{skill}</li>
           {/each}
         </ul>
         <ul class="works__tools">
           Roles:
-          {#each roles as role}
+          {#each data.role as role}
             <li>{role}</li>
           {/each}
         </ul>
-        {#if vizs.length != 0}
+        {#if data.viz.length != 0}
           <ul class="works__tools">
             Visualization types:
-            {#each vizs as viz}
+            {#each data.viz as viz}
               <li>{viz}</li>
             {/each}
           </ul>
