@@ -13,7 +13,7 @@
         Currently, I work as a <a href="https://www.texastribune.org/about/staff/yuriko-schumacher/" target="_blank">data visuals designer/developer</a> at the Texas Tribune. I am passionate about designing and producing meaningful (and beautiful &#10024;) graphics/data tools that tell {widont("important stories.")}
       </p>
       <p>
-        My skills currently include: front-end development with frameworks like <span class="skill">React</span> and <span class="skill">Svelte</span>, JavaScript libraries including <span class="skill">d3.js</span> and <span class="skill">three.js</span>, data analysis and statistical analysis in <span class="skill">R</span>/<span class="skill">Python</span>, GIS analysis and production using <span class="skill">QGIS</span>, design tools like <span class="skill">figma</span>, and graphics prodution with <span class="skill">Illustrator</span>. I'm constantly exploring new technologies as I pursue the best ways to execute {widont("on projects!")}
+        My skills currently include: front-end development with frameworks like <span class="skill">React</span> and <span class="skill">Svelte</span>, JavaScript libraries including <span class="skill">d3.js</span> and <span class="skill">three.js</span>, data analysis and statistical analysis in <span class="skill">R</span>, GIS analysis and production using <span class="skill">QGIS</span>, design tools like <span class="skill">figma</span>, and graphics prodution with <span class="skill">Illustrator</span>. I'm constantly exploring new technologies as I pursue the best ways to execute {widont("on projects!")}
       </p>
       <div class="about__lists">
         <ul class="about__list contact-info">
