@@ -15,7 +15,7 @@ import { widont } from "journalize";
 <a href="{data.link}" target="_blank">
   <div class="works__work">
     <div class="works__img">
-      <img class="" src="./image/{data.id}.{data.img}" width="400" alt="{data.title}"/>
+      <img class="" loading="lazy" src="./image/{data.id}.{data.img}" width="400" alt="{data.title}"/>
     </div>
     <div class="works__description">
       <div class="works__info works__info__top">

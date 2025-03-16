@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="credit">
-    <p class="font--special">© Yuriko Schumacher 2024</p>
+    <p class="font--special">© Yuriko Schumacher 2025</p>
   </div>
 </footer>
 
